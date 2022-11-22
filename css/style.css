@@ -1,6 +1,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 60%; } }
 
 body {
   max-width: 144rem;
@@ -13,6 +16,9 @@ body {
   max-width: 100%;
   width: 80%;
   margin-inline: auto; }
+  @media only screen and (max-width: 68.75em) {
+    .container {
+      width: 95%; } }
 
 .navigation {
   display: flex;
@@ -29,7 +35,11 @@ body {
     color: #162542;
     border: none;
     border-radius: 0.8rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: pointer; }
+  .navigation__btn:hover {
+    color: #fff;
+    background-color: #162542; }
 
 .hero-section {
   display: flex;
@@ -38,6 +48,10 @@ body {
   .hero-section__image {
     max-width: 54rem;
     border-radius: 1.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-section__image {
+        max-width: 47rem;
+        margin-left: 6rem; } }
   .hero-section__header {
     font-weight: 900;
     font-size: 5.6rem;
@@ -45,11 +59,18 @@ body {
     max-width: 44rem;
     color: #162542;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-section__header {
+        font-size: 4.5rem; } }
   .hero-section__paragraph {
     max-width: 44rem;
     font-size: 1.8rem;
     font-weight: 500;
     color: #7b8bad; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-section__paragraph {
+        max-width: 33.8rem;
+        font-size: 1.6rem; } }
   .hero-section__button {
     background-color: #f16718;
     border-radius: 0.8rem;
@@ -60,7 +81,14 @@ body {
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-right: 4rem; }
+    margin-right: 4rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-section__button {
+        margin-right: 3rem;
+        font-size: 1.4rem; } }
+  .hero-section__button:hover {
+    background-color: #ff9b62; }
   .hero-section__btn-release {
     display: flex;
     align-items: center; }
@@ -69,6 +97,9 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #7b8bad; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-section__sub {
+        width: 12.7rem; } }
 
 .section {
   display: flex;
@@ -78,14 +109,25 @@ body {
     height: 48rem;
     margin-right: 3rem;
     border-radius: 1.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section__image-mob-leptop {
+        width: 100%;
+        max-width: 21rem; } }
   .section__image-glass-leptop {
     max-width: 44rem;
     height: 48rem;
     margin-right: 15rem;
     border-radius: 1.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section__image-glass-leptop {
+        width: 100%;
+        max-width: 44rem; } }
   .section__header-paragraph {
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 56.25em) {
+      .section__header-paragraph {
+        flex-direction: row; } }
   .section__header {
     max-width: 25.5rem;
     font-size: 3.2rem;
@@ -131,7 +173,8 @@ body {
 .footer {
   font-size: 1.6rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  color: #7b8bad; }
 
 .bold {
   font-weight: 700; }

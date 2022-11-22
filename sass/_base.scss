@@ -1,6 +1,24 @@
+$color-white: #fff;
+$color-blue: #162542;
+$color-blue-light: #7b8bad;
+$color-orange: #f16718;
+$color-orange-light: #ff9b62;
+$color-grey-light: #e8eff2;
+
+$bp-largest: 75em; //1200
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
 html {
   box-sizing: border-box;
+
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 60%;
+  }
 }
 
 body {
@@ -18,4 +36,8 @@ body {
 
   width: 80%;
   margin-inline: auto;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 95%;
+  }
 }

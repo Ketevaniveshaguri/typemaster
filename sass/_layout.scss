@@ -10,10 +10,15 @@
     width: 17.5rem;
     height: 5.8rem;
     background-color: #e8eff2;
-    color: #162542;
+    color: $color-blue;
     border: none;
     border-radius: 0.8rem;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    color: $color-white;
+    background-color: $color-blue;
   }
 }
 // .hero-section__btn-release {
@@ -29,6 +34,12 @@
     max-width: 54rem;
     border-radius: 1.2rem;
 
+    @media only screen and (max-width: $bp-medium) {
+      // width: 100%;
+      max-width: 47rem;
+      margin-left: 6rem;
+    }
+
     // max-height: 48rem;
   }
   &__header {
@@ -38,6 +49,10 @@
     max-width: 44rem;
     color: #162542;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 4.5rem;
+    }
   }
 
   &__paragraph {
@@ -45,9 +60,14 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: #7b8bad;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 33.8rem;
+      font-size: 1.6rem;
+    }
   }
   &__button {
-    background-color: #f16718;
+    background-color: $color-orange;
     border-radius: 0.8rem;
     border: none;
     width: 17rem;
@@ -57,7 +77,16 @@
     font-size: 1.6rem;
     font-weight: 700;
     margin-right: 4rem;
+    cursor: pointer;
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 3rem;
+      font-size: 1.4rem;
+    }
   }
+  &__button:hover {
+    background-color: $color-orange-light;
+  }
+
   &__btn-release {
     display: flex;
     align-items: center;
@@ -67,6 +96,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #7b8bad;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 12.7rem;
+    }
   }
 }
 
@@ -79,17 +112,30 @@
     height: 48rem;
     margin-right: 3rem;
     border-radius: 1.2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      max-width: 21rem;
+    }
   }
   &__image-glass-leptop {
     max-width: 44rem;
     height: 48rem;
     margin-right: 15rem;
     border-radius: 1.2rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      max-width: 44rem;
+    }
   }
 
   &__header-paragraph {
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: row;
+    }
   }
 
   &__header {
@@ -153,6 +199,7 @@
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
+  color: $color-blue-light;
 }
 
 .bold {
