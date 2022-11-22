@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 144rem;
+  font-family: "Barlow";
+
+  font-weight: 500;
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+
+  width: 80%;
+  margin-inline: auto;
+}
