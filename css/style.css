@@ -1,9 +1,7 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
   font-size: 62.5%; }
-  @media only screen and (max-width: 68.75em) {
-    html {
-      font-size: 60%; } }
 
 body {
   max-width: 144rem;
@@ -45,6 +43,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .hero-section {
+      display: flex;
+      flex-direction: column; } }
   .hero-section__image {
     max-width: 54rem;
     border-radius: 1.2rem; }
@@ -52,6 +54,12 @@ body {
       .hero-section__image {
         max-width: 47rem;
         margin-left: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .hero-section__image {
+        margin-left: 0;
+        margin-top: 4rem;
+        width: 37.2rem;
+        height: 33.1rem; } }
   .hero-section__header {
     font-weight: 900;
     font-size: 5.6rem;
@@ -113,21 +121,31 @@ body {
       .section__image-mob-leptop {
         width: 100%;
         max-width: 21rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .section__image-mob-leptop {
+        width: 100%;
+        max-width: 15rem;
+        height: 23.3rem; } }
   .section__image-glass-leptop {
     max-width: 44rem;
     height: 48rem;
-    margin-right: 15rem;
+    margin-right: 6.5rem;
     border-radius: 1.2rem; }
     @media only screen and (max-width: 56.25em) {
       .section__image-glass-leptop {
         width: 100%;
         max-width: 44rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .section__image-glass-leptop {
+        width: 100%;
+        max-width: 25rem;
+        height: 23.3rem; } }
   .section__header-paragraph {
     display: flex;
     flex-direction: column; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 68.75em) {
       .section__header-paragraph {
-        flex-direction: row; } }
+        display: none; } }
   .section__header {
     max-width: 25.5rem;
     font-size: 3.2rem;
@@ -157,6 +175,7 @@ body {
   margin-bottom: 12.8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  align-items: start;
   column-gap: 30px; }
   .last-section__header {
     width: 20.5rem;
@@ -165,7 +184,8 @@ body {
     line-height: 1.2;
     color: #162542; }
   .last-section__paragraph {
-    width: 25.5rem;
+    width: 100%;
+    max-width: 25.5rem;
     font-size: 1.6rem;
     font-weight: 500;
     color: #7b8bad; }

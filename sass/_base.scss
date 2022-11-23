@@ -14,11 +14,9 @@ $bp-smallest: 31.25em;
 html {
   box-sizing: border-box;
 
-  font-size: 62.5%;
+  overflow-x: hidden;
 
-  @media only screen and (max-width: $bp-large) {
-    font-size: 60%;
-  }
+  font-size: 62.5%;
 }
 
 body {
